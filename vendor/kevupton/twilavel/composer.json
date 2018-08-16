@@ -1,0 +1,31 @@
+{
+    "name": "kevupton/twilavel",
+    "description": "PHP Twilio for Laravel and Lumen",
+    "keywords": ["laravel", "twilio", "lumen", "php", "twilio php"],
+    "type": "Extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kevin Upton",
+            "email": "uptonkg@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3",
+        "twilio/sdk": "^5.14",
+        "kevupton/laravel-package-service-provider": "^0.0.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kevupton\\Twilavel\\": "src/Kevupton/Twilavel/"
+        },
+        "files": [
+            "src/Kevupton/Twilavel/Helpers/helpers.php"
+        ]
+    },
+    "minimum-stability": "stable",
+    "require-dev": {
+        "laravel/laravel": "^5.5",
+        "laravel/lumen": "^5.5"
+    }
+}
